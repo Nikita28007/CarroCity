@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/maps"
+        android:name="com.nikita.carrocity.MapsFragment"
+        android:label="Maps" >
+        <action
+            android:id="@+id/action_maps_to_bottomSheet"
+            app:destination="@id/bottomSheet" />
+        <action
+            android:id="@+id/action_maps_to_cerrar_Coche_BottomSheet2"
+            app:destination="@id/cerrar_Coche_BottomSheet" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.nikita.carrocity.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_maps"
+            app:destination="@id/maps" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.nikita.carrocity.RegisterFragment"
+        android:label="RegisterFragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_driverLicenseFragment"
+            app:destination="@id/driverLicenseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/driverLicenseFragment"
+        android:name="com.nikita.carrocity.DriverLicenseFragment"
+        android:label="DriverLicenseFragment" >
+        <action
+            android:id="@+id/action_driverLicenseFragment_to_creditCardFragment"
+            app:destination="@id/creditCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/creditCardFragment"
+        android:name="com.nikita.carrocity.CreditCardFragment"
+        android:label="CreditCardFragment" >
+        <action
+            android:id="@+id/action_creditCardFragment_to_userAgreementFragment"
+            app:destination="@id/userAgreementFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/bottomSheet"
+        android:name="com.nikita.carrocity.BottomSheet"
+        android:label="BottomSheet" >
+        <action
+            android:id="@+id/action_bottomSheet_to_tomar_Foto_Coche"
+            app:destination="@id/tomar_Foto_Coche" />
+    </dialog>
+    <fragment
+        android:id="@+id/userAgreementFragment"
+        android:name="com.nikita.carrocity.UserAgreementFragment"
+        android:label="UserAgreementFragment" >
+        <action
+            android:id="@+id/action_userAgreementFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cocheReservado"
+        android:name="com.nikita.carrocity.CocheReservado"
+        android:label="CocheReservado" >
+        <action
+            android:id="@+id/action_cocheReservado_to_maps"
+            app:destination="@id/maps" />
+    </fragment>
+    <fragment
+        android:id="@+id/tomar_Foto_Coche"
+        android:name="com.nikita.carrocity.Tomar_Foto_Coche"
+        android:label="Tomar_Foto_Coche" >
+        <action
+            android:id="@+id/action_tomar_Foto_Coche_to_cocheReservado"
+            app:destination="@id/cocheReservado" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_maps"
+        app:destination="@id/maps" />
+    <action
+        android:id="@+id/action_global_ajustes"
+        app:destination="@id/ajustes_Fragment" />
+    <fragment
+        android:id="@+id/ajustes_Fragment"
+        android:name="com.nikita.carrocity.AjustesFragment"
+        android:label="Ajustes_Fragment" >
+        <action
+            android:id="@+id/action_ajustes_Fragment_to_cambiarCorreoFragment"
+            app:destination="@id/cambiarCorreoFragment" />
+        <action
+            android:id="@+id/action_ajustes_Fragment_to_cambiarPassword_Fragment"
+            app:destination="@id/cambiarPassword_Fragment" />
+        <action
+            android:id="@+id/action_ajustes_Fragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_ajustes_Fragment_to_addCreditCardFragment"
+            app:destination="@id/addCreditCardFragment" />
+    </fragment><action android:id="@+id/action_global_loginFragment" app:destination="@id/loginFragment"/>
+    <fragment
+        android:id="@+id/cambiarCorreoFragment"
+        android:name="com.nikita.carrocity.CambiarCorreoFragment"
+        android:label="CambiarCorreoFragment" >
+        <action
+            android:id="@+id/action_cambiarCorreoFragment_to_ajustes_Fragment"
+            app:destination="@id/ajustes_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cambiarPassword_Fragment"
+        android:name="com.nikita.carrocity.CambiarPasswordFragment"
+        android:label="CambiarPassword_Fragment" >
+        <action
+            android:id="@+id/action_cambiarPassword_Fragment_to_ajustes_Fragment"
+            app:destination="@id/ajustes_Fragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/cerrar_Coche_BottomSheet"
+        android:name="com.nikita.carrocity.CerrarCocheBottomSheet"
+        android:label="Cerrar_Coche_BottomSheet" />
+    <fragment
+        android:id="@+id/addCreditCardFragment"
+        android:name="com.nikita.carrocity.AddCreditCardFragmentAjustes"
+        android:label="AddCreditCardFragment" >
+        <action
+            android:id="@+id/action_addCreditCardFragment_to_ajustes_Fragment"
+            app:destination="@id/ajustes_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/puntos_Fragment"
+        android:name="com.nikita.carrocity.PuntosFragment"
+        android:label="Puntos_Fragment" /><action android:id="@+id/action_global_puntos_Fragment" app:destination="@id/puntos_Fragment"/>
+</navigation>

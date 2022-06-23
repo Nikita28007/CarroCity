@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/matriculaBottomSheetReservar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:text="Matricula" />
+
+    <TextView
+        android:id="@+id/marcaBottomSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:text="Marca" />
+
+    <TextView
+        android:id="@+id/modeloBottomSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:text="Modelo" />
+
+    <ImageView
+        android:id="@+id/imagenCoche"
+        android:layout_width="300dp"
+        android:layout_height="100sp"
+        android:layout_gravity="center"
+         />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTarifa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/botonReservarBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/blueCustom"
+        android:text="Reservar" />
+
+
+
+
+
+</LinearLayout>

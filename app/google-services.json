@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "781757205973",
+    "project_id": "carrocity-61acc",
+    "storage_bucket": "carrocity-61acc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781757205973:android:40d6c1fe07a673c7b1815c",
+        "android_client_info": {
+          "package_name": "com.nikita.carrocity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "781757205973-foefu5otr8d1jsss9go0j772rs4pknto.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADcM411WRDRy55br60v76_vqxrIxggLOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "781757205973-foefu5otr8d1jsss9go0j772rs4pknto.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
